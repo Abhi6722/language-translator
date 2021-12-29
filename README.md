@@ -5,7 +5,7 @@
 ![Build](https://img.shields.io/badge/Build-Passing-success?https://img.shields.io/endpoint?url=https://language-translator-abhi6722.herokuapp.com&style=for-the-badge)
 ![PHP](https://img.shields.io/badge/PHP-8.1.0-blueviolet?style=for-the-badge)
 ![Frontend](https://img.shields.io/badge/Frontend-HTML/CSS/JS-green?style=for-the-badge)
-![API](https://img.shields.io/badge/API-Google_Translate-fcba03?style=for-the-badge)
+![Version](https://img.shields.io/badge/Version-v2-fcba03?style=for-the-badge)
 
 This is a Language Translator app built using `PHP`, `HTML`, `CSS`, `JS`. This app detects the language automatically and can be translated into any of the desired language provided. See the website live [here](https://language-translator-abhi6722.herokuapp.com).
 
