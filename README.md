@@ -52,6 +52,7 @@ The following image shows the translation workflow for app. The basic steps are:
 1. Extract messages to translate with xgettext, stored as Portable Object Template file (.pot)
 2. Use msginit and msgmerge to create a Portable Object file (.po) for each language
 3. Convert the PO files into optimized Machine Object Files (.mo) using msgfmt
+![image](https://github.com/Abhi6722/language-translator/blob/main/github-images/ss2.png)
 
 ### Prepare PHP for translations
 Important notice: Before you start using gettext check if your development and production server both support it:
