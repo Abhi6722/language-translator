@@ -111,27 +111,30 @@ With the --add-comments option comment blocks preceding the _(...) expression ar
 
 #### 2. Create initial PO files with msginit
 The POT file is the template file used to create a new PO file for each target language. Place them in directories as mentioned above:
-
+```
 msginit --locale de --input myapp.pot --output locale/de/LC_MESSAGES/myapp.po
 msginit --locale fr --input myapp.pot --output  locale/fr/LC_MESSAGES/myapp.po
-This step is only needed once when you set up your project. As msginit overwrites an existing PO file, you shouldn't call it if you have already PO files containing translations. In this case use msgmerge as described later.
+```
+This step is only needed once when you set up your project. As `msginit` overwrites an existing PO file, you shouldn't call it if you have already PO files containing translations. In this case use `msgmerge` as described later.
 
 #### 3. Translate the PO files
 Now you can start translating the PO files. You can use a text editor or a special translation editor for that. If your translations contain non-ASCII characters, change the charset in the header from ASCII to UTF-8:
-
+```
 "Content-Type: text/plain; charset=UTF-8\n"
+```
 
-#### 4. Convert PO to MO files using msgfmt
+#### 4. Convert PO to MO files using `msgfmt`
 You next have to convert the PO files into "Message Object" files (with the extension .mo) which can be loaded on the server:
-
+```
 cd locale/de/LC_MESSAGES/
 msgfmt myapp.po --output-file=myapp.mo
+```
 
 #### 5. Enjoy
 Start your PHP script and enjoy its translated output. Keep in mind that gettext caches the translation data. If you add/remove/update MO files you might have to restart/reload your web server.
 
-#### 6. Managing changes with msgmerge
-If you're updating your PHP code, you might change translatable texts, too. This requires an update of the PO/MO files. There's, of course, a gettext tool to simplify this task, it's called msgmerge. First, you have to extract the translatable strings from the new PHP sources using xgettext. This overwrites your old POT file with a new one. Then you can merge the changes into the language-specific PO files:
+#### 6. Managing changes with `msgmerge`
+If you're updating your PHP code, you might change translatable texts, too. This requires an update of the PO/MO files. There's, of course, a gettext tool to simplify this task, it's called `msgmerge`. First, you have to extract the translatable strings from the new PHP sources using `xgettext`. This overwrites your old POT file with a new one. Then you can merge the changes into the language-specific PO files:
 
 xgettext --add-comments *.php myapp.pot
 msgmerge --update locale/de/LC_MESSAGES/myapp.po myapp.pot
