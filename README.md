@@ -187,7 +187,7 @@ The project has following dependencies
 - nginx (1.20.2)
 
 ## Implementation
-Since the main objective from the start was to make it easy to access from anywhere so deploying the project was an important phase. First the project was successfully uploaded on Github and then it was deployed to Heroku. After that it was  
+Since the main objective from the start was to make it easy to access from anywhere so deploying the project was an important phase. First the project was successfully uploaded on Github and then it was deployed to Heroku. 
 
 ## Conclusion
 The Language Translator web app is successfully created and deployed to Heroku [here.](https://language-translator-abhi6722.herokuapp.com/)
