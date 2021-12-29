@@ -15,12 +15,29 @@ This is a Language Translator app built using `PHP`, `HTML`, `CSS`, `JS`. This a
 Language translator is a php based web app which is used to translate different language. Unlike other application it has certain advantages like it can be easily access by everyone having internet access. It detects the language automatically entered by the user and can be converted into any of the desired language. With a beautiful and simple UI it is very handy to use.
 
 ## Table of Content
-- Introduction
-- Existing Method
-- Proposed method with Architecture
-- Methodology
-- Implementation
-- Conclusion
+- [ABSTRACT](#abstract)
+- [Table of Content](#table-of-content)
+- [Introduction](#introduction)
+- [Existing Method](#existing-method)
+- [Proposed method with Architecture](#proposed-method-with-architecture)
+  * [Prepare PHP for translations](#prepare-php-for-translations)
+  * [1. Check PHP modules](#1-check-php-modules)
+  * [2. Set language](#2-set-language)
+  * [3. Set the translation files](#3-set-the-translation-files)
+  * [4. Set text domain](#4-set-text-domain)
+  * [5. Add text markup](#5-add-text-markup)
+- [Methodology](#methodology)
+  * [Create translation files](#create-translation-files)
+    + [1. Extract strings with xgettext](#1-extract-strings-with-xgettext)
+    + [2. Create initial PO files with msginit](#2-create-initial-po-files-with-msginit)
+    + [3. Translate the PO files](#3-translate-the-po-files)
+    + [4. Convert PO to MO files using `msgfmt`](#4-convert-po-to-mo-files-using-msgfmt)
+    + [5. Enjoy](#5-enjoy)
+    + [6. Managing changes with `msgmerge`](#6-managing-changes-with-msgmerge)
+  * [Dependencies](#dependencies)
+- [Implementation](#implementation)
+- [Conclusion](#conclusion)
+
 
 ## Introduction
 The task was to create a language translator app or web application that can translate from English to any language. There were various approach to try out this project but since I am familiar with php, html, css, js so I used these languages to create a translator app. See the website live [here](https://language-translator-abhi6722.herokuapp.com).
