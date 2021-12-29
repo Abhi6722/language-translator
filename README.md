@@ -3,7 +3,7 @@
 </h1>
 
 ![Build](https://img.shields.io/badge/Build-Passing-success?https://img.shields.io/endpoint?url=https://language-translator-abhi6722.herokuapp.com&style=for-the-badge)
-![PHP](https://img.shields.io/badge/PHP-7.2.5-blueviolet?style=for-the-badge)
+![PHP](https://img.shields.io/badge/PHP-8.1.0-blueviolet?style=for-the-badge)
 ![Frontend](https://img.shields.io/badge/Frontend-HTML/CSS/JS-green?style=for-the-badge)
 ![API](https://img.shields.io/badge/API-Google_Translate-fcba03?style=for-the-badge)
 
@@ -100,6 +100,8 @@ Now you can wrap all translatable strings with the _() function. This function i
 ```
 The `_()` function is also used to extract translatable strings from your source code automatically.
 
+
+## Methodology
 ### Create translation files
 #### 1. Extract strings with xgettext
 With the xgettext tool you can extract all translatable strings from the PHP source code, store them in a PO template file with file extension .pot.
@@ -159,8 +161,17 @@ msgstr "Übersetzen von PHP-Seiten mit gettext"
 ```
 If **`msgmerge`** cannot detect a similarity between old and new string, the old one is marked as deleted, and the new one is added as new entry, without translation.
 
-## Methodology
+### Dependencies
+The project has following dependencies
+- php (8.1.0)
+- ext-mbstring (bundled with php)
+- composer (2.1.14)
+- apache (2.4.51)
+- nginx (1.20.2)
 
 ## Implementation
+Since the main objective from the start was to make it easy to access from anywhere so deploying the project was an important phase. First the project was successfully uploaded on Github and then it was deployed to Heroku. After that it was  
 
 ## Conclusion
+The Language Translator web app is successfully created and deployed to Heroku [here.](https://language-translator-abhi6722.herokuapp.com/)
+The main objectives were also fulfilled as the UI is easy to use and also Beautiful along with various language provided.
