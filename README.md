@@ -2,6 +2,7 @@
     Language Translator
 </h1>
 
+![Build](https://img.shields.io/badge/Build-Passing-success?https://img.shields.io/endpoint?url=https://language-translator-abhi6722.herokuapp.com&style=for-the-badge)
 ![PHP](https://img.shields.io/badge/PHP-7.2.5-blueviolet?style=for-the-badge)
 ![Frontend](https://img.shields.io/badge/Frontend-HTML/CSS/JS-green?style=for-the-badge)
 ![API](https://img.shields.io/badge/API-Google_Translate-fcba03?style=for-the-badge)
@@ -14,6 +15,12 @@ This is a Language Translator app built using `PHP`, `HTML`, `CSS`, `JS`. This a
 Language translator is a php based web app which is used to translate different language. Unlike other application it has certain advantages like it can be easily access by everyone having internet access. It detects the language automatically entered by the user and can be converted into any of the desired language. With a beautiful and simple UI it is very handy to use.
 
 ## Table of Content
+- Introduction
+- Existing Method
+- Proposed method with Architecture
+- Methodology
+- Implementation
+- Conclusion
 
 ## Introduction
 
