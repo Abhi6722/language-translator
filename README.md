@@ -193,3 +193,7 @@ Since the main objective from the start was to make it easy to access from anywh
 ## Conclusion
 The Language Translator web app is successfully created and deployed to Heroku [here.](https://language-translator-abhi6722.herokuapp.com/)
 The main objectives were also fulfilled as the UI is easy to use and also Beautiful along with various language provided.
+
+Link to Application : https://language-translator-abhi6722.herokuapp.com
+Link to Repository : https://github.com/Abhi6722/language-translator
+Link to the Presentation : https://docs.google.com/presentation/d/1nbB6OkQARDjqiui5r7AC6tvbRQRy-od2_zzsz1DYUd0/edit?usp=sharing
