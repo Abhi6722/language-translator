@@ -190,7 +190,7 @@ The project has following dependencies
 ## Implementation
 Since the main objective from the start was to make it easy to access from anywhere so deploying the project was an important phase. First the project was successfully uploaded on Github and then it was deployed to Heroku. 
 
-![image](https://github.com/Abhi6722/language-translator/blob/main/github-images/ss1.png)
+![Demo](https://github.com/Abhi6722/language-translator/blob/main/github-images/Demo%20Video.gif)
 
 ## Conclusion
 The Language Translator web app is successfully created and deployed to Heroku [here.](https://language-translator-abhi6722.herokuapp.com/)
